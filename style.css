@@ -1,9 +1,64 @@
+
+
 html{
     box-sizing: border-box;
 }
 
 body{
     margin: 0;
-    min-height: 100vh;
-    background: rebeccapurple;
+    background: white;
+}
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url('./milk-and-mocha-bears-unscreen.gif');
+    background-size: contain;
+    background-position: left center;
+    background-repeat: no-repeat;
+}
+
+button{
+    cursor: pointer;
+    outline: none;
+    width: 100px;
+    height: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    color:palevioletred;
+    background: whitesmoke;
+    /* border: none; */
+    border-radius: 10px;
+    border-color: rgb(240, 92, 116);
+    box-shadow: 1px 1px 10px 5px rgba(226, 187, 187, 0.911);
+}
+
+button:hover{
+    filter:contrast(2)
+}
+
+button:active{
+    transform: scale(0.95);
+}
+
+button:disabled{
+    cursor: default;
+    filter: brightness(30%);
+}
+
+/* media query --> for mobile view */
+@media screen and (max-width: 1000px){
+    .container{
+        background-position: center center;
+        background-size: 500px;
+    }
+    
+    button{
+        box-shadow: 1px 1px 10px 5px rgba(226, 187, 187, 0.911);
+    }
+
 }
