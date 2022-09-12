@@ -16,7 +16,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: url('./milk-and-mocha-bears-unscreen.gif');
+    background: url('love.webp');
     background-size: contain;
     background-position: left center;
     background-repeat: no-repeat;
@@ -54,7 +54,7 @@ button:disabled{
 @media screen and (max-width: 1000px){
     .container{
         background-position: center center;
-        background-size: 500px;
+        background-size: 400px;
     }
     
     button{
